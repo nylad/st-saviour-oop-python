@@ -4,7 +4,7 @@ class Genre:
         self.title = title 
         self.artist = artist 
 
-    def
+    
     def play(self):
         print(self.title + ' by ' + self.artist + ' plays')
 
