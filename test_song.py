@@ -6,4 +6,10 @@ def test_songs():
 
     jolene = Song('Jolene', 'Dolly Parton')
     assert jolene.play() == 'Jolene by Dolly Parton plays'
+
+def test_country():
+    pass
+
+def test_rap():
+    pass
     
