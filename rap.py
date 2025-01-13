@@ -11,3 +11,6 @@ class Rap(Song):
 
     def play(self) -> str:
         return self.title + ' by ' + self.artist + ' plays with special guests: ' + str(self.special_guests)
+    
+    def __str__(self):
+        return f'title: {self.title}, artist: {self.artist}, special guests: {str(self.special_guests)}'
