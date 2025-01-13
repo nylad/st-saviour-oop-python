@@ -1,15 +1,17 @@
 from song import Song
+from rap import Rap
+from country import Country
 
 def test_songs():
-    humble = Song('HUMBLE', 'Kendrick Lamar')
-    assert humble.play() == 'HUMBLE by Kendrick Lamar plays'
+    humble = Rap('HUMBLE', 'Kendrick Lamar', [])
+    assert humble.play() == 'HUMBLE by Kendrick Lamar plays with special guests: []'
 
-    jolene = Song('Jolene', 'Dolly Parton')
-    assert jolene.play() == 'Jolene by Dolly Parton plays'
+    jolene = Country('Jolene', 'Dolly Parton', 60)
+    assert jolene.play() == 'Jolene by Dolly Parton plays at speed: 60'
 
-def test_country():
-    pass
+    assert isinstance(humble, Rap)
+    assert isinstance(humble, Song)
 
-def test_rap():
-    pass
+    assert isinstance(jolene, Country)
+    assert isinstance(jolene, Song)
     

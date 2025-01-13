@@ -8,3 +8,6 @@ class Rap(Song):
     def add_special_guests(self, *args):
         for arg in args:
             self.special_guests.append(arg)
+
+    def play(self) -> str:
+        return self.title + ' by ' + self.artist + ' plays with special guests: ' + str(self.special_guests)

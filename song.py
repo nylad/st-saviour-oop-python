@@ -1,12 +1,14 @@
+from abc import ABC, abstractmethod
+
 # Song Class
-class Song:
+class Song(ABC):
     def __init__(self, title: str, artist: str):
         self.title = title 
         self.artist = artist 
 
-    
-    def play(self):
-        return self.title + ' by ' + self.artist + ' plays'
+    @abstractmethod
+    def play(self) -> str:
+        pass
 
         
 
